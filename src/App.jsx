@@ -52,7 +52,7 @@ function App() {
   return (
     <>
       <div
-        className={`dark:bg-[#050505] md:px-[40px] md:pt-[60px] md:pb-[120px] h-[100%] px-6 pt-6 pb-16 font-${font} xl:max-w-[736px] xl:mx-auto`}>
+        className={`dark:bg-[#050505] md:px-[40px] md:pt-[60px] h-[100%] px-6 pt-6 font-${font} xl:max-w-[736px] xl:mx-auto`}>
         <header className="flex items-center justify-between mb-6">
           <div>
             <svg
@@ -364,7 +364,7 @@ function App() {
               </div>
             ))}
           <span className="w-[100%] h-px bg-[#E9E9E9] dark:bg-[#3A3A3A] block my-8"></span>
-          <footer>
+          <footer className="pb-16 md:pb-[120px]">
             <div>
               <p className="underline text-[14px] text-[#757575] font-normal mb-[10px]">
                 Source
