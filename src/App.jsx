@@ -14,6 +14,7 @@ function App() {
   const toggleTheme = () => {
     setIsToggled(!isToggled);
     document.documentElement.classList.toggle("dark");
+    // document.body.classList.toggle("dark");
   };
 
   const toggleFont = () => {
@@ -175,7 +176,7 @@ function App() {
           } focus-within:border-2 focus-within:border-[#A445ED]
           `}>
           <input
-            className="w-[90%] h-[48px] bg-transparent outline-none md:text-[20px]"
+            className="w-[90%] h-[48px] bg-transparent outline-none md:text-[20px] dark:bg-[#1F1F1F]"
             placeholder="Search for any word…"
             type="text"
             name=""
