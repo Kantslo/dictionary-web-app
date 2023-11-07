@@ -95,44 +95,45 @@ function App() {
                   />
                 </svg>
               </button>
-            </div>
-            {opened && (
-              <div className="absolute right-16 md:mt-[160px] md:w-44 md:right-20 w-28 mt-[150px] origin-top-right font-bold bg-white dark:bg-[#1F1F1F] rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
-                <div
-                  className="py-1 dark:text-[#FFF]"
-                  role="menu"
-                  aria-orientation="vertical"
-                  aria-labelledby="options-menu">
+              {opened && (
+                <div className="absolute right-[90px] md:mt-[160px] md:w-44 md:right-20 w-28 mt-[150px] origin-top-right font-bold bg-white dark:bg-[#1F1F1F] rounded-md shadow-lg ring-1 ring-black ring-opacity-5 xl:w-60 xl:right-[unset]">
                   <div
-                    onClick={() => {
-                      setFont("Sans Serif");
-                      setOpened(!opened);
-                    }}
-                    className="block px-4 py-2 text-sm md:text-base text-gray-700 cursor-pointer font-Sans Serif hover:bg-gray-100 hover:text-gray-900 dark:text-[#FFF]"
-                    role="menuitem">
-                    Sans Serif
-                  </div>
-                  <button
-                    onClick={() => {
-                      setFont("Serif");
-                      setOpened(!opened);
-                    }}
-                    className="block px-4 py-2 text-sm md:text-base text-gray-700 cursor-pointer font-Serif hover:bg-gray-100 hover:text-gray-900 dark:text-[#FFF]"
-                    role="menuitem">
-                    Serif
-                  </button>
-                  <div
-                    onClick={() => {
-                      setFont("Mono");
-                      setOpened(!opened);
-                    }}
-                    className="block px-4 py-2 text-sm md:text-base text-gray-700 cursor-pointer font-Mono hover:bg-gray-100 hover:text-gray-900 dark:text-[#FFF]"
-                    role="menuitem">
-                    Mono
+                    className="py-1 dark:text-[#FFF]"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="options-menu">
+                    <div
+                      onClick={() => {
+                        setFont("Sans Serif");
+                        setOpened(!opened);
+                      }}
+                      className="block px-4 py-2 text-sm md:text-base text-gray-700 cursor-pointer font-Sans Serif hover:text-gray-900 dark:text-[#FFF]"
+                      role="menuitem">
+                      Sans Serif
+                    </div>
+                    <button
+                      onClick={() => {
+                        setFont("Serif");
+                        setOpened(!opened);
+                      }}
+                      className="block px-4 py-2 text-sm md:text-base text-gray-700 cursor-pointer font-Serif hover:text-gray-900 dark:text-[#FFF]"
+                      role="menuitem">
+                      Serif
+                    </button>
+                    <div
+                      onClick={() => {
+                        setFont("Mono");
+                        setOpened(!opened);
+                      }}
+                      className="block px-4 py-2 text-sm md:text-base text-gray-700 cursor-pointer font-Mono hover:text-gray-900 dark:text-[#FFF]"
+                      role="menuitem">
+                      Mono
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
+
             <span className="w-px h-[32px] block bg-[#E9E9E9]"></span>
             <div className="flex gap-3 md:gap-5">
               <div>
